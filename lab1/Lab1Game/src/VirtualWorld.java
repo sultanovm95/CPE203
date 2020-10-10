@@ -70,14 +70,18 @@ public final class VirtualWorld
 
    public void draw()
    {
+      // Created empty constructors because updateOnTime and drawViewport are not STATIC
+      Event event = new Event();
+      Viewport viewPort = new Viewport();
+
       long time = System.currentTimeMillis();
       if (time >= next_time)
       {
-         Functions.updateOnTime(this.scheduler, time);
+         event.updateOnTime(this.scheduler, time);
          next_time = time + TIMER_ACTION_PERIOD;
       }
 
-      Functions.drawViewport(view);
+      viewPort.drawViewport(view);
    }
 
    public void keyPressed()
@@ -102,14 +106,15 @@ public final class VirtualWorld
                dx = 1;
                break;
          }
-         Functions.shiftView(view, dx, dy);
+         WorldView worldView = new WorldView();
+         worldView.shiftView(view, dx, dy);
       }
    }
 
    public static Background createDefaultBackground(ImageStore imageStore)
    {
       return new Background(DEFAULT_IMAGE_NAME,
-         Functions.getImageList(imageStore, DEFAULT_IMAGE_NAME));
+         imageStore.getImageList(imageStore, DEFAULT_IMAGE_NAME));
    }
 
    public static PImage createImageColored(int width, int height, int color)
@@ -130,7 +135,9 @@ public final class VirtualWorld
       try
       {
          Scanner in = new Scanner(new File(filename));
-         Functions.loadImages(in, imageStore, screen);
+         // Empty Constructor
+         Background background = new Background();
+         background.loadImages(in, imageStore, screen);
       }
       catch (FileNotFoundException e)
       {
@@ -144,7 +151,9 @@ public final class VirtualWorld
       try
       {
          Scanner in = new Scanner(new File(filename));
-         Functions.load(in, world, imageStore);
+         Entity entity = new Entity();
+         // Empty Constructor
+         entity.load(in, world, imageStore);
       }
       catch (FileNotFoundException e)
       {
@@ -157,7 +166,7 @@ public final class VirtualWorld
    {
       for (Entity entity : world.entities)
       {
-         Functions.scheduleActions(entity, scheduler, world, imageStore);
+         scheduler.scheduleActions(entity, scheduler, world, imageStore);
       }
    }
 
@@ -179,6 +188,8 @@ public final class VirtualWorld
          }
       }
    }
+
+
 
    public static void main(String [] args)
    {

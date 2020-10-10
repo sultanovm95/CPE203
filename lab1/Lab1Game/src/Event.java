@@ -1,3 +1,5 @@
+import java.util.List;
+
 final class Event
 {
    public Action action;
@@ -10,4 +12,37 @@ final class Event
       this.time = time;
       this.entity = entity;
    }
+
+   public Event() {
+
+   }
+
+   public void removePendingEvent(EventScheduler scheduler,
+                                         Event event)
+   {
+      List<Event> pending = scheduler.pendingEvents.get(event.entity);
+
+      if (pending != null)
+      {
+         pending.remove(event);
+      }
+   }
+
+   public void updateOnTime(EventScheduler scheduler, long time)
+   {
+      Action action = new Action();
+      while (!scheduler.eventQueue.isEmpty() &&
+              scheduler.eventQueue.peek().time < time)
+      {
+         Event next = scheduler.eventQueue.poll();
+
+         removePendingEvent(scheduler, next);
+
+         action.executeAction(next.action, scheduler);
+      }
+   }
+
+
+
+
 }
