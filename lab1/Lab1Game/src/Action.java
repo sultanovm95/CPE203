@@ -21,12 +21,6 @@ final class Action
       this.repeatCount = repeatCount;
    }
 
-   public Action() {
-
-   }
-
-
-
 
    public void executeAction(Action action, EventScheduler scheduler)
    {

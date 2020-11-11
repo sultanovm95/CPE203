@@ -58,6 +58,9 @@ public class Triangle implements Shape {
 
     @Override
     public void translate(Point pnt) {
+        this.pointA = new Point(pointA.x + pnt.x, pointA.y + pnt.y);
+        this.pointB = new Point(pointB.x + pnt.x, pointB.y + pnt.y);
+        this.pointC = new Point(pointC.x + pnt.x, pointC.y + pnt.y);
 
     }
 

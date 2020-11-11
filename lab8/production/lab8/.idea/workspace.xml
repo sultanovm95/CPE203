@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="58d3e971-825f-4c48-a23e-a1b28e95b683" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/com/company/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/Lab1Game/src/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab1/Lab1Game/src/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/Lab1Game/src/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab1/Lab1Game/src/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab4/out/production/lab4/com/company/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab4/out/production/lab4/com/company/ConvexPolygon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab4/out/production/lab4/com/company/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab4/out/production/lab4/com/company/Triangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab4/src/com/company/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab4/src/com/company/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab4/src/com/company/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab4/src/com/company/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab4/src/com/company/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab4/src/com/company/Triangle.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1k7lMHSq8MNPfDZsj1UL3R9ZrIu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="58d3e971-825f-4c48-a23e-a1b28e95b683" name="Default Changelist" comment="" />
+      <created>1605059460835</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605059460835</updated>
+    </task>
+    <servers />
+  </component>
+</project>

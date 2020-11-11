@@ -55,7 +55,9 @@ public class Circle implements Shape {
 
     @Override
     public void translate(Point pnt) {
-        this.point = pnt;
+        // x: 2 y: -1
+        // create new point
+        this.point = new Point(pnt.x, pnt.y);
     }
 
 }

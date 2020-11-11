@@ -7,5 +7,13 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="untitled" />
+    <orderEntry type="module" module-name="lab6" />
+    <orderEntry type="module" module-name="GameOct24" />
+    <orderEntry type="module" module-name="Lab1" />
+    <orderEntry type="module" module-name="lab7" />
+    <orderEntry type="module" module-name="lab2" />
+    <orderEntry type="module" module-name="lab8" />
+    <orderEntry type="module" module-name="lab5" />
   </component>
 </module>

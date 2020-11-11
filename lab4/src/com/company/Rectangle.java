@@ -8,7 +8,7 @@ public class Rectangle implements Shape {
     private double height;
     Point point;
     Color color;
-
+                                                // LEFT TOP POINT
     public Rectangle(double width, double height, Point pnt, Color clr) {
         this.width = width;
         this.height = height;
@@ -65,7 +65,7 @@ public class Rectangle implements Shape {
 
     @Override
     public void translate(Point pnt) {
-
+        this.point = new Point(pnt.x, pnt.y);
     }
 
 }

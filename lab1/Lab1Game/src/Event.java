@@ -30,7 +30,7 @@ final class Event
 
    public void updateOnTime(EventScheduler scheduler, long time)
    {
-      Action action = new Action();
+
       while (!scheduler.eventQueue.isEmpty() &&
               scheduler.eventQueue.peek().time < time)
       {
@@ -38,7 +38,7 @@ final class Event
 
          removePendingEvent(scheduler, next);
 
-         action.executeAction(next.action, scheduler);
+         executeAction(next.action, scheduler);
       }
    }
 
